@@ -8,7 +8,7 @@
 <!--    <link rel="shortcut icon" href="/favicon.ico">-->
 <!--    <link rel="stylesheet" href="/css/default.css">-->
 <!--    <link rel="stylesheet" href="/css/layout.css">-->
-
+    <link rel="stylesheet" href="./main.css">
 
     <title>Swap Portfolio</title>
 </head>
@@ -19,8 +19,8 @@
 
         <nav id="nav-wrap">
 
-            <ul id="nav" className="nav">
-                <li className="current"><a href="#home">Home</a></li>
+            <ul id="nav" class="nav">
+                <li class="current"><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#portfolio">Works</a></li>
@@ -28,9 +28,51 @@
 
         </nav>
 
+        <div class="banner">
+            <div class="banner-text">
+                <h1>I'm Swap.</h1>
+                <hr />
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/swapnanil.deb.3/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/swapnanil-d-2b3aa712b/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.github.com/swapnanildeb"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
     </header>
 
-    <section id="about"></section>
+    <section id="about">
+        <div class="row">
+            <div class="three columns">
+                <img class="profile-pic"  src={profilepic} alt="Swapnanil Deb" />
+            </div>
+            <div class="nine columns main-col">
+                <h2>About Me</h2>
+
+                <p>I'm currently a Senior at Northwestern University interested in Computational Linguistics and Blockchain Technologies. I have 4 years of professional experience building enterprise level web applications as well as event promotional material. I have also spent the last 3 years assisting a Linguistics laboratory and am currently writing my honors thesis in Computational Linguistics.</p>
+                <div class="row">
+                    <div class="columns contact-details">
+                        <h2>Contact Details</h2>
+                        <p class="address">
+                            <span>{name}</span><br />
+                            <span>{street}<br />
+						         {city} {state}, {zip}
+                   </span><br />
+                            <span>{phone}</span><br />
+                            <span>{email}</span>
+                        </p>
+                    </div>
+                    <div class="columns download">
+                        <p>
+                            <a href={resumeDownload} target="_blank" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <section id="resume"></section>
     <section id="portfolio"></section>
 
